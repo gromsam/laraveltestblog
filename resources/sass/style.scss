@@ -1,0 +1,46 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+#posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.icon_count{
+    cursor: pointer;
+    position: relative;
+    min-width: 66px;
+    .badge{
+        color: #fff;
+        position: absolute;
+        left: 47px;
+        top: 14px;
+    }
+}
+.badge{
+    text-decoration: none !important;
+    &:hover,
+    &.current{
+        background: #0d6efd !important;
+        border-color: #0d6efd !important;
+        color: #fff;
+    }
+}
+.nav-link{
+  &.active{
+      background: #eee;
+      border-radius: 5px;
+  }
+}
+.tag{
+    font-size: 1rem;
+}
+#articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+#tags{
+    position: sticky;
+    top: 60px;
+}
